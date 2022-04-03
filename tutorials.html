@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="EN" class="page">
+
+<!-- Connect Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SoccerBud</title>
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<!-- Body Start -->
+<body class="page__body search__page">
+
+  <div class="site-container">
+
+    <!-- Connect Header -->
+
+<!-- Header -->
+
+<header class="header">
+
+  <div class="container header__container">
+
+    <a href="index.html" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <div class="nav__container" data-menu>
+      <nav class="nav" title="Main navigation">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="single-page.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="search.html" class="nav__link">Search</a></li>
+          <li class="nav__item"><a href="tutorials.html" class="nav__link">Tutorials</a></li>
+          <li class="nav__item"><a href="chat.html" class="nav__link">Chat</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__right">
+
+        <!-- Hide when logged in -->
+        <!-- <ul class="nav__log list-reset">
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--login">Login</a></li>
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--sign">Sign up</a></li>
+        </ul> -->
+
+        <!-- Hide when logged out -->
+        <div class="user">
+          <p class="user__text">Hello
+            <span class="user__name">User Name</span>
+          </p>
+
+          <picture class="user__pic">
+            <source srcset="img/user-1.avif" type="image/avif">
+            <source srcset="img/user-1.webp" type="image/webp">
+            <img loading="lazy" src="img/user-1.png" class="image user__img" width="60" height="60" alt="User Avatar">
+          </picture>
+
+          <div class="dropdown dropdown--active">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a class="dropdown__link dropdown__signout" href="#">Sign out</a>
+                <a class="dropdown__link " href="#">Sign out more</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <button class="burger btn-reset" aria-label="Open menu" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+  </div>
+
+</header>
+
+    <!-- Main Start -->
+    <main class="main container">
+
+      <!-- Tutorials Header Start -->
+<div class="tutorials">
+
+  <h1 class="tutorials__title">Tutorials</h1>
+  <h2 class="tutorials__subtitle">Become the best version of yourself</h2>
+
+</div>
+<!-- Tutorials Header End -->
+
+      <!-- Tutorials Slides Start -->
+<section class="popular">
+
+  <div class="popular__container">
+
+    <div class="tutorials__swiper swiper">
+
+      <div class="tutorials__nav card__nav">
+        <h2 class="single__section-title tutorials__slide-title">Top picks for you</h2>
+        <!-- <div class="swiper-scrollbar card__scroll popular__scroll"></div> -->
+        <div class="popular__btns card__btns">
+          <button class="popular__btn popular__btn--prev card__btn btn-reset card__btn--prev " aria-label="Prev slide"></button>
+          <button class="popular__btn popular__btn--next card__btn btn-reset card__btn--next " aria-label="Next slide"></button>
+        </div>
+      </div>
+
+      <div class="tutorials__wrapper swiper-wrapper">
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-2.avif" type="image/avif">
+                <source srcset="img/tutorials-2.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-2.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Kicks</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">How to shoot a voley?</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-3.avif" type="image/avif">
+                <source srcset="img/tutorials-3.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-3.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Footwear</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Best football footwear</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-4.avif" type="image/avif">
+                <source srcset="img/tutorials-4.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-4.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Tutorials</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Score every penalty</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+
+      </div>
+
+    </div>
+
+    <div class="tutorials__swiper swiper">
+
+      <div class="tutorials__nav card__nav">
+        <h2 class="single__section-title tutorials__slide-title">Favourite</h2>
+        <!-- <div class="swiper-scrollbar card__scroll popular__scroll"></div> -->
+        <div class="popular__btns card__btns">
+          <button class="popular__btn popular__btn--prev card__btn btn-reset card__btn--prev " aria-label="Prev slide"></button>
+          <button class="popular__btn popular__btn--next card__btn btn-reset card__btn--next " aria-label="Next slide"></button>
+        </div>
+      </div>
+
+      <div class="tutorials__wrapper swiper-wrapper">
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-2.avif" type="image/avif">
+                <source srcset="img/tutorials-2.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-2.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Kicks</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">How to shoot a voley?</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-3.avif" type="image/avif">
+                <source srcset="img/tutorials-3.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-3.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Footwear</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Best football footwear</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-4.avif" type="image/avif">
+                <source srcset="img/tutorials-4.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-4.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Tutorials</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Score every penalty</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+
+      </div>
+
+    </div>
+
+    <div class="tutorials__swiper swiper">
+
+      <div class="tutorials__nav card__nav">
+        <h2 class="single__section-title tutorials__slide-title">Category 1</h2>
+        <!-- <div class="swiper-scrollbar card__scroll popular__scroll"></div> -->
+        <div class="popular__btns card__btns">
+          <button class="popular__btn popular__btn--prev card__btn btn-reset card__btn--prev " aria-label="Prev slide"></button>
+          <button class="popular__btn popular__btn--next card__btn btn-reset card__btn--next " aria-label="Next slide"></button>
+        </div>
+      </div>
+
+      <div class="tutorials__wrapper swiper-wrapper">
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-2.avif" type="image/avif">
+                <source srcset="img/tutorials-2.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-2.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Kicks</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">How to shoot a voley?</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-3.avif" type="image/avif">
+                <source srcset="img/tutorials-3.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-3.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Footwear</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Best football footwear</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-4.avif" type="image/avif">
+                <source srcset="img/tutorials-4.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-4.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Tutorials</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Score every penalty</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+
+      </div>
+
+    </div>
+
+    <div class="tutorials__swiper swiper">
+
+      <div class="tutorials__nav card__nav">
+        <h2 class="single__section-title tutorials__slide-title">Category 2</h2>
+        <!-- <div class="swiper-scrollbar card__scroll popular__scroll"></div> -->
+        <div class="popular__btns card__btns">
+          <button class="popular__btn popular__btn--prev card__btn btn-reset card__btn--prev " aria-label="Prev slide"></button>
+          <button class="popular__btn popular__btn--next card__btn btn-reset card__btn--next " aria-label="Next slide"></button>
+        </div>
+      </div>
+
+      <div class="tutorials__wrapper swiper-wrapper">
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-2.avif" type="image/avif">
+                <source srcset="img/tutorials-2.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-2.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Kicks</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">How to shoot a voley?</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-3.avif" type="image/avif">
+                <source srcset="img/tutorials-3.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-3.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Footwear</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Best football footwear</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-4.avif" type="image/avif">
+                <source srcset="img/tutorials-4.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-4.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Tutorials</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Score every penalty</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/tutorials-1.avif" type="image/avif">
+                <source srcset="img/tutorials-1.webp" type="image/webp">
+                <img loading="lazy" src="img/tutorials-1.jpg" class="image tutorials__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="tutorials__category card__category">Dribbling</p>
+            </div>
+
+            <div class="tutorials__bottom card__bottom">
+              <h3 class="popular__title card__title">Basic dribling lesson</h3>
+              <div class="tutorials__info card__info">
+                <p class="tutorials__time card__type">11 min</p>
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="tutorials__views card__players">20</p>
+              </div>
+            </div>
+
+          </div>
+
+         </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- Tutorials Slides End -->
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Connect Footer -->
+    <footer class="footer container-fluid">
+  <div class="footer__container container">
+    <a href="index.html" class="logo footer__logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <p class="footer__copy">©Copyright by THE6!</p>
+  </div>
+</footer>
+
+  </div>
+
+</body>
+<!-- Body End -->
+
+</html>

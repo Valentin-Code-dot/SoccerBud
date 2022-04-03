@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="EN" class="page">
+
+<!-- Connect Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SoccerBud</title>
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<!-- Body Start -->
+<body class="page__body search__page">
+
+  <div class="site-container">
+
+    <!-- Connect Header -->
+
+<!-- Header -->
+
+<header class="header">
+
+  <div class="container header__container">
+
+    <a href="index.html" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <div class="nav__container" data-menu>
+      <nav class="nav" title="Main navigation">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="single-page.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="search.html" class="nav__link">Search</a></li>
+          <li class="nav__item"><a href="tutorials.html" class="nav__link">Tutorials</a></li>
+          <li class="nav__item"><a href="chat.html" class="nav__link">Chat</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__right">
+
+        <!-- Hide when logged in -->
+        <!-- <ul class="nav__log list-reset">
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--login">Login</a></li>
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--sign">Sign up</a></li>
+        </ul> -->
+
+        <!-- Hide when logged out -->
+        <div class="user">
+          <p class="user__text">Hello
+            <span class="user__name">User Name</span>
+          </p>
+
+          <picture class="user__pic">
+            <source srcset="img/user-1.avif" type="image/avif">
+            <source srcset="img/user-1.webp" type="image/webp">
+            <img loading="lazy" src="img/user-1.png" class="image user__img" width="60" height="60" alt="User Avatar">
+          </picture>
+
+          <div class="dropdown dropdown--active">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a class="dropdown__link dropdown__signout" href="#">Sign out</a>
+                <a class="dropdown__link " href="#">Sign out more</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <button class="burger btn-reset" aria-label="Open menu" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+  </div>
+
+</header>
+
+    <!-- Main Start -->
+    <main class="main">
+      <!-- Single Page Hero Start -->
+
+<section class="single__hero container">
+  <picture>
+    <source srcset="img/single--img.avif" type="image/avif">
+    <source srcset="img/single--img.webp" type="image/webp">
+    <img loading="lazy" src="img/single--img.jpg" class="image single__img" width="" height="" alt="Details page image">
+  </picture>
+  <button class="single__icon btn-reset">
+    <svg class="single__icon-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 225.371 225.371" style="enable-background:new 0 0 225.371 225.371;" xml:space="preserve">
+<path d="M159.933,12.904c-26.386,0-40.36,12.722-47.313,22.892c-6.944-10.17-20.897-22.892-47.228-22.892
+	C33.897,12.904,0,33.865,0,79.887c0,18.138,3.938,32.532,13.166,48.132c8.983,15.184,28.006,33.897,56.541,55.622
+	c11.137,8.479,21.396,15.612,28.042,20.103c12.771,8.631,13.271,8.72,14.814,8.721c0.078,0.002,0.153,0.003,0.228,0.003
+	c1.459,0,2.464-0.465,14.673-8.675c6.65-4.473,16.918-11.579,28.065-20.039c28.57-21.681,47.646-40.433,56.699-55.734
+	c9.212-15.571,13.143-29.967,13.143-48.132C225.371,33.865,191.45,12.904,159.933,12.904z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+  </button>
+</section>
+
+<!-- Single Page Hero End -->
+
+      <!-- Sigle Content Start -->
+
+<section class="single__content container">
+  <!-- Header Start -->
+  <div class="single__header">
+    <h1 class="single__title">Huddersfield Arena</h1>
+    <div class="single__box">
+      <p class="single__item single__rating">5</p>
+      <p class="single__item single__location">14 Leeds Road, Huddersfield</p>
+      <p class="single__item single__type">6-a-side</p>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- Book Start -->
+  <div class="single__book">
+    <div class="single__book-details">
+      <p class="single__book-price">£122 <span>/ ppph</span></p>
+      <p class="single__book-rating">5</p>
+    </div>
+
+    <form class="single__form" action="">
+      <div class="single__form-content">
+        <label
+          class="search__label search__label--date single__label"
+          for="Date"
+        >
+          Date
+          <input
+            type="date"
+            name="Date"
+            class="input-reset search__input single__input"
+            id="Date"
+            placeholder="Choose a day"
+          />
+        </label>
+
+        <label class="search__label search__label--date single__label" for="">
+          Match time
+          <select class="single-select__box" name="selectItem" id="selectItem">
+            <option class="single-select__option" value="">
+              08:00 — 10:00
+            </option>
+            <option class="single-select__option" value="">
+              10:00 — 12:00
+            </option>
+            <option class="single-select__option" value="">
+              12:00 — 14:00
+            </option>
+            <option class="single-select__option" value="">
+              14:00 — 16:00
+            </option>
+            <option class="single-select__option" value="">
+              16:00 — 18:00
+            </option>
+          </select>
+        </label>
+
+        <label
+          class="search__label search__label--date single__label"
+          for="players"
+        >
+          Players
+          <input
+            type="number"
+            name="players"
+            class="input-reset search__input single__input"
+            id="players"
+            placeholder="Players"
+          />
+        </label>
+
+        <button class="btn-reset search__btn single__btn" type="submit">
+          Book now
+        </button>
+      </div>
+    </form>
+  </div>
+  <!-- Book End -->
+
+  <!-- Players Section Start -->
+  <div class="single__players players">
+    <h2 class="single__players-title players__title single__section-title">
+      Players
+    </h2>
+
+    <div class="single__players-items players__items">
+      <!-- Player Card Start -->
+      <div class="single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text players__rating single__rating">5</p>
+              <p class="players__info-text players__position">GK</p>
+            </div>
+          </div>
+        </div>
+        <div class="players__right">
+          <button class="players__btn players__msg btn-reset"></button>
+          <button class="players__btn players__add btn-reset"></button>
+        </div>
+      </div>
+      <!-- Player Card End -->
+      <!-- Player Card Start -->
+      <div class="single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text players__rating single__rating">5</p>
+              <p class="players__info-text players__position">GK</p>
+            </div>
+          </div>
+        </div>
+        <div class="players__right">
+          <button class="players__btn players__msg btn-reset"></button>
+          <button class="players__btn players__add btn-reset"></button>
+        </div>
+      </div>
+      <!-- Player Card End -->
+      <!-- Player Card Start -->
+      <div class="single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text players__rating single__rating">5</p>
+              <p class="players__info-text players__position">GK</p>
+            </div>
+          </div>
+        </div>
+        <div class="players__right">
+          <button class="players__btn players__msg btn-reset"></button>
+          <button class="players__btn players__add btn-reset"></button>
+        </div>
+      </div>
+      <!-- Player Card End -->
+      <!-- Player Card Start -->
+      <div class="single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text players__rating single__rating">5</p>
+              <p class="players__info-text players__position">GK</p>
+            </div>
+          </div>
+        </div>
+        <div class="players__right">
+          <button class="players__btn players__msg btn-reset"></button>
+          <button class="players__btn players__add btn-reset"></button>
+        </div>
+      </div>
+      <!-- Player Card End -->
+      <!-- Player Card Start -->
+      <div class="single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text players__rating single__rating">5</p>
+              <p class="players__info-text players__position">GK</p>
+            </div>
+          </div>
+        </div>
+        <div class="players__right">
+          <button class="players__btn players__msg btn-reset"></button>
+          <button class="players__btn players__add btn-reset"></button>
+        </div>
+      </div>
+      <!-- Player Card End -->
+      <!-- Player Card Start -->
+      <div class="single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text players__rating single__rating">5</p>
+              <p class="players__info-text players__position">GK</p>
+            </div>
+          </div>
+        </div>
+        <div class="players__right">
+          <button class="players__btn players__msg btn-reset"></button>
+          <button class="players__btn players__add btn-reset"></button>
+        </div>
+      </div>
+      <!-- Player Card End -->
+    </div>
+
+    <button class="players__btn-more btn-reset">Load more</button>
+  </div>
+  <!-- Players Section End -->
+
+  <!-- Amenities Start -->
+  <div class="single__amenities">
+    <h2 class="single__amenities-title single__section-title">Amenities</h2>
+
+    <div class="single__amenities-items">
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--wifi.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Wi-Fi</p>
+      </div>
+      <!-- Amenities Item End -->
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--changing-room.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Changing room</p>
+      </div>
+      <!-- Amenities Item End -->
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--shower.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Shower</p>
+      </div>
+      <!-- Amenities Item End -->
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--pitch.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Pitch</p>
+      </div>
+      <!-- Amenities Item End -->
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--wifi.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Wi-Fi</p>
+      </div>
+      <!-- Amenities Item End -->
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--changing-room.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Changing-room</p>
+      </div>
+      <!-- Amenities Item End -->
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--shower.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Shower</p>
+      </div>
+      <!-- Amenities Item End -->
+      <!-- Amenities Item Start -->
+      <div class="single__amenities-item">
+        <img
+          class="single__amenities-item-img"
+          src="img/icon--pitch.svg"
+          alt="Amenity Icon"
+        />
+        <p class="single__amenities-item-title">Pitch</p>
+      </div>
+      <!-- Amenities Item End -->
+    </div>
+  </div>
+  <!-- Amenities End -->
+
+  <!-- Things to know Start -->
+  <div class="single__things">
+    <h2 class="single__things-title single__section-title">Things to know</h2>
+
+    <ul class="single__things-items">
+      <li class="single__things-item">Lorem ipsum</li>
+      <li class="single__things-item">Lorem ipsum</li>
+      <li class="single__things-item">Lorem ipsum</li>
+      <li class="single__things-item">Lorem ipsum</li>
+    </ul>
+  </div>
+  <!-- Things to know End -->
+
+  <!-- Description Start -->
+  <div class="single__descr">
+    <h2 class="single__descr-title single__section-title">Description</h2>
+
+    <div class="single__descr-box">
+      <p class="single__descr-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas donec
+        mi, ante mollis integer cras vulputate. Duis viverra proin nibh risus
+        convallis eu. Duis morbi bibendum nunc, maecenas pellentesque senectus
+        nibh sed. Rhoncus, nullam at turpis at viverra non. Ornare ac netus
+        pretium, ac. Phasellus condimentum velit lacus ac.
+      </p>
+      <p class="single__descr-text">
+        Eget eu orci arcu lectus elementum sem mattis bibendum quam. Malesuada
+        pellentesque dolor aliquam est a praesent odio. Elit in natoque eu, in
+        diam orci, elementum in. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Egestas donec mi, ante mollis integer cras vulputate.
+        Duis viverra proin nibh risus convallis eu. Duis morbi bibendum nunc,
+        maecenas pellentesque senectus nibh sed. Rhoncus, nullam at turpis at
+        viverra non. Ornare ac netus pretium, ac. Phasellus condimentum velit
+        lacus ac. Eget eu orci arcu lectus elementum sem mattis bibendum quam.
+        Malesuada pellentesque dolor aliquam est a praesent odio. Elit in
+        natoque eu, in diam orci, elementum in.
+      </p>
+    </div>
+  </div>
+  <!-- Description End -->
+
+  <!-- Map Start -->
+  <div class="single__map">
+    <h2 class="single__map-title single__section-title">Where to find us</h2>
+
+    <div class="single__map-box">
+      <iframe class="single__map-item"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8925.969365685854!2d-1.7671817273296413!3d53.661524276702266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bdc2303cb8019%3A0xf6b4ec362f3e4180!2sCanalside%20Sports%20Complex!5e0!3m2!1sro!2suk!4v1646949193756!5m2!1sro!2suk"
+        width=""
+        height="450"
+        style="border: 0"
+        allowfullscreen="yes"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+  <!-- Map End -->
+
+  <!-- Reviews Start -->
+<div class="single__reviews  reviews">
+  <div class=" single-reviews__container">
+
+    <div class=" single-reviews__right reviews__right">
+      <h2 class="single__section-title">
+        Testimonials
+      </h2>
+      <div class="swiper single-reviews__swiper ">
+        <div class="swiper-wrapper single-reviews__wrapper reviews__wrapper">
+
+           <div class="swiper-slide reviews__slide">
+             <div class="reviews__item single-reviews__item">
+              <p class="reviews__text section__text">
+                " Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+                magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+                labore et dolore magna aliqua. "
+              </p>
+              <div class="reviews__avatar">
+                <picture>
+                  <source srcset="img/reviews--avatar-1.avif" type="image/avif">
+                  <source srcset="img/reviews--avatar-1.webp" type="image/webp">
+                  <img loading="lazy" src="img/reviews--avatar-1.png" class="image" width="70" height="70" alt="Reviews avatar">
+                </picture>
+                <div class="reviews__info">
+                  <h3 class="reviews__name">Adrian Minune</h3>
+                  <p class="reviews__position">goalkeeper</p>
+                </div>
+              </div>
+             </div>
+           </div>
+
+           <div class="swiper-slide reviews__slide">
+            <div class="reviews__item single-reviews__item">
+             <p class="reviews__text section__text">
+               " Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+               magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+               labore et dolore magna aliqua. "
+             </p>
+             <div class="reviews__avatar">
+               <picture>
+                 <source srcset="img/reviews--avatar-1.avif" type="image/avif">
+                 <source srcset="img/reviews--avatar-1.webp" type="image/webp">
+                 <img loading="lazy" src="img/reviews--avatar-1.png" class="image" width="70" height="70" alt="Reviews avatar">
+               </picture>
+               <div class="reviews__info">
+                 <h3 class="reviews__name">Dan Dipper</h3>
+                 <p class="reviews__position">goalkeeper</p>
+               </div>
+             </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__item single-reviews__item">
+             <p class="reviews__text section__text">
+               " Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+               magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+               labore et dolore magna aliqua. "
+             </p>
+             <div class="reviews__avatar">
+               <picture>
+                 <source srcset="img/reviews--avatar-1.avif" type="image/avif">
+                 <source srcset="img/reviews--avatar-1.webp" type="image/webp">
+                 <img loading="lazy" src="img/reviews--avatar-1.png" class="image" width="70" height="70" alt="Reviews avatar">
+               </picture>
+               <div class="reviews__info">
+                 <h3 class="reviews__name">Lorem ipsum</h3>
+                 <p class="reviews__position">goalkeeper</p>
+               </div>
+             </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+</setion>
+<!-- Reviews End -->
+
+</section>
+
+<!-- Sigle Content End -->
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Connect Footer -->
+    <footer class="footer container-fluid">
+  <div class="footer__container container">
+    <a href="index.html" class="logo footer__logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <p class="footer__copy">©Copyright by THE6!</p>
+  </div>
+</footer>
+
+  </div>
+
+</body>
+<!-- Body End -->
+
+</html>

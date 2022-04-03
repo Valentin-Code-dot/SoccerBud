@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="EN" class="page">
+
+<!-- Connect Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SoccerBud</title>
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<!-- Body Start -->
+<body class="page__body search__page">
+
+  <div class="site-container">
+
+    <!-- Connect Header -->
+
+<!-- Header -->
+
+<header class="header">
+
+  <div class="container header__container">
+
+    <a href="index.html" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <div class="nav__container" data-menu>
+      <nav class="nav" title="Main navigation">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="single-page.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="search.html" class="nav__link">Search</a></li>
+          <li class="nav__item"><a href="tutorials.html" class="nav__link">Tutorials</a></li>
+          <li class="nav__item"><a href="chat.html" class="nav__link">Chat</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__right">
+
+        <!-- Hide when logged in -->
+        <!-- <ul class="nav__log list-reset">
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--login">Login</a></li>
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--sign">Sign up</a></li>
+        </ul> -->
+
+        <!-- Hide when logged out -->
+        <div class="user">
+          <p class="user__text">Hello
+            <span class="user__name">User Name</span>
+          </p>
+
+          <picture class="user__pic">
+            <source srcset="img/user-1.avif" type="image/avif">
+            <source srcset="img/user-1.webp" type="image/webp">
+            <img loading="lazy" src="img/user-1.png" class="image user__img" width="60" height="60" alt="User Avatar">
+          </picture>
+
+          <div class="dropdown dropdown--active">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a class="dropdown__link dropdown__signout" href="#">Sign out</a>
+                <a class="dropdown__link " href="#">Sign out more</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <button class="burger btn-reset" aria-label="Open menu" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+  </div>
+
+</header>
+
+    <!-- Main Start -->
+    <main class="main container">
+
+      <!-- Add Header Start -->
+<div class="tutorials">
+
+  <h1 class="tutorials__title">Add new pithes</h1>
+
+</div>
+<!-- Add Header End -->
+
+      <!-- Form Start -->
+<form class="add-new" action="" method="">
+
+  <!-- Pitch name Start -->
+  <div class="add-new__box">
+      <label class="add-new__pitch-label" for="pitchName">Pitch name</label>
+      <input class="add-new__pitch-name input" id="pitchName" name="pitchName" type="text" placeholder="Pitch name">
+  </div>
+  <!-- Pitch name End -->
+
+  <!-- Pitch location Start -->
+  <div class="add-new__box">
+      <label class="add-new__pitch-label" for="pitchLocation">Location</label>
+      <input class="add-new__pitch-name input" id="pitchLocation" name="pitchLocation" type="text" placeholder="Pitch location">
+  </div>
+  <!-- Pitch Location End -->
+
+  <!-- pitch Rating Stars -->
+  <div class="add-new__box">
+      <h3 class="add-new__pitch-label">Stars</h3>
+
+      <div class="add-new__container">
+
+      <label class="add-new__radio-label" for="pitchStar1">
+          <input class="add-new__radio-input" type="radio" id="pitchStar1" name="stars" value="1">
+          <span class="add-new__radio-checkmark"></span>
+          1
+      </label>
+
+      <label class="add-new__radio-label" for="pitchStar2">
+          <input class="add-new__radio-input" type="radio" id="pitchStar2" name="stars" value="2">
+          <span class="add-new__radio-checkmark"></span>
+          2
+      </label>
+
+      <label class="add-new__radio-label" for="pitchStar3">
+          <input class="add-new__radio-input" type="radio" id="pitchStar3" name="stars" value="3">
+          <span class="add-new__radio-checkmark"></span>
+          3
+      </label>
+
+      <label class="add-new__radio-label" for="pitchStar4">
+          <input class="add-new__radio-input" type="radio" id="pitchStar4" name="stars" value="4">
+          <span class="add-new__radio-checkmark"></span>
+          4
+      </label>
+
+      <label class="add-new__radio-label" for="pitchStar5">
+          <input class="add-new__radio-input" type="radio" id="pitchStar5" name="stars" value="5">
+          <span class="add-new__radio-checkmark"></span>
+          5
+      </label>
+
+      </div>
+
+  </div>
+  <!-- pitch Rating End -->
+
+    <!-- pitch Check In Start -->
+    <div class="add-new__box">
+      <label class="add-new__pitch-label" for="pitchCheckIn">Start game</label>
+      <input class="add-new__pitch-check input" id="pitchCheckIn" name="check_in" type="time" placeholder="Start game" step="2">
+  </div>
+  <!-- pitch Check In End -->
+
+  <!-- pitch Check In Start -->
+  <div class="add-new__box">
+      <label class="add-new__pitch-label" for="pitchCheckIn">Finish game</label>
+      <input class="add-new__pitch-check input" id="pitchCheckIn" name="check_in" type="time" placeholder="Finish game" step="2">
+  </div>
+  <!-- pitch Check In End -->
+
+  <!-- pitch Style Start -->
+  <div class="add-new__box">
+      <h3 class="add-new__pitch-label">Type</h3>
+
+      <div class="add-new__container">
+
+              <label class="add-new__radio-label pitch__radio-label" for="1">
+                  <input class="add-new__radio-input" type="radio" value="" id="1" name="style">
+                  <span class="add-new__radio-checkmark pitch__radio-checkmark"></span>
+                  5-a-syde
+              </label>
+
+              <label class="add-new__radio-label pitch__radio-label" for="1">
+                <input class="add-new__radio-input" type="radio" value="" id="1" name="style">
+                <span class="add-new__radio-checkmark pitch__radio-checkmark"></span>
+                5-a-syde
+            </label>
+
+      </div>
+
+  </div>
+  <!-- pitch Style End -->
+
+  <!-- Pitch Check Out Start -->
+  <div class="add-new__box">
+      <label class="add-new__pitch-label" for="pitchDate"></label>
+      <input class="add-new__pitch-check input" id="pitchDate" type="date" name="" placeholder="Match date" step="2">
+  </div>
+  <!-- Pitch Check Out End -->
+
+  <!-- Amaneties Box Start -->
+  <div class="add-new__box">
+      <h3 class="add-new__pitch-label">Amaneties</h3>
+
+      <div class="add-new__container">
+
+          <label class="add-new__checkbox-label" for="amenity">
+              <input class="add-new__checkbox-input" type="checkbox" value="" id="amenity" name="amenities[]">
+              <span class="add-new__checkbox-checkmark"></span>
+              Wi-Fi
+          </label>
+          <label class="add-new__checkbox-label" for="amenity">
+              <input class="add-new__checkbox-input" type="checkbox" value="" id="amenity" name="amenities[]">
+              <span class="add-new__checkbox-checkmark"></span>
+              Shower
+          </label>
+
+      </div>
+
+  </div>
+  <!-- Amaneties Box End -->
+
+  <!-- pitch Price Start -->
+  <div class="add-new__box">
+      <label class="add-new__pitch-label" for="pitchPrice">Price</label>
+      <input class="add-new__pitch-name input" id="pitchPrice" name="price" type="number" placeholder="Price">
+  </div>
+  <!-- pitch Price End -->
+
+  <!-- Image Price Start -->
+  <div class="add-new__box">
+      <label class="add-new__pitch-label" for="pitchImage">Upload image</label>
+      <input class="add-new__pitch-name" id="pitchImage" name="image" type="file" placeholder="Choose image">
+  </div>
+  <!-- Image Price End -->
+
+  <!-- Submit Start -->
+  <button class="add-new__submit section__cta" type="submit" name="add-new">Submit</button>
+  <!-- Submit End -->
+
+</form>
+<!-- Form End -->
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Connect Footer -->
+    <footer class="footer container-fluid">
+  <div class="footer__container container">
+    <a href="index.html" class="logo footer__logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <p class="footer__copy">©Copyright by THE6!</p>
+  </div>
+</footer>
+
+  </div>
+
+</body>
+<!-- Body End -->
+
+</html>

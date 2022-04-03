@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="EN" class="page">
+
+<!-- Connect Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SoccerBud</title>
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<!-- Body Start -->
+<body class="page__body">
+
+  <div class="site-container homepage">
+
+    <!-- Connect Header -->
+
+<!-- Header -->
+
+<header class="header">
+
+  <div class="container header__container">
+
+    <a href="index.html" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <div class="nav__container" data-menu>
+      <nav class="nav" title="Main navigation">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="single-page.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="search.html" class="nav__link">Search</a></li>
+          <li class="nav__item"><a href="tutorials.html" class="nav__link">Tutorials</a></li>
+          <li class="nav__item"><a href="chat.html" class="nav__link">Chat</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__right">
+
+        <!-- Hide when logged in -->
+        <ul class="nav__log list-reset">
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--login">Login</a></li>
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--sign">Sign up</a></li>
+        </ul>
+
+        <!-- Hide when logged out -->
+        <!-- <div class="user">
+          <p class="user__text">Hello
+            <span class="user__name">User Name</span>
+          </p>
+
+          <picture class="user__pic">
+            <source srcset="img/user-1.avif" type="image/avif">
+            <source srcset="img/user-1.webp" type="image/webp">
+            <img loading="lazy" src="img/user-1.png" class="image user__img" width="60" height="60" alt="User Avatar">
+          </picture>
+
+          <div class="dropdown dropdown--active">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a class="dropdown__link dropdown__signout" href="#">Sign out</a>
+                <a class="dropdown__link " href="#">Sign out more</a>
+              </li>
+            </ul>
+          </div>
+
+        </div> -->
+
+      </div>
+    </div>
+
+    <button class="burger btn-reset" aria-label="Open menu" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+  </div>
+
+</header>
+
+    <!-- Main Start -->
+    <main class="main">
+
+<section class="hero container-fluid">
+
+  <div class="hero__container container">
+
+    <!-- Hero Left Start -->
+    <div class="hero__left">
+
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Looking to find
+          a soccer match?
+        </h1>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <!-- Search Form Start -->
+      <form action="#" class="form search hero-hide">
+        <label class="search__label search__label--location" for="Location"> Location
+          <input type="text" name="Location" class="input-reset search__input" id="Location" placeholder="Choose location">
+        </label>
+        <label class="search__label search__label--date" for="Date"> Date
+          <input type="date" name="Date" class="input-reset search__input" id="Date" placeholder="Choose a day">
+        </label>
+        <button class="btn-reset search__btn">Search</button>
+      </form>
+      <!-- Search Form End -->
+
+    </div>
+    <!-- Hero Left End -->
+
+    <!-- Hero Right Start -->
+    <div class="hero__right">
+
+      <picture>
+        <source srcset="img/hero--player.avif" type="image/avif">
+        <source srcset="img/hero--player.webp" type="image/webp">
+        <img loading="lazy" src="img/hero--player.png" class="image" width="370" height="550" alt="Player">
+      </picture>
+
+    </div>
+    <!-- Hero Right End -->
+
+  </div>
+
+  <div class="hero__sponsors sponsors-hide">
+
+    <div class="swiper hero__swiper">
+      <div class="swiper-wrapper hero__wrapper">
+         <div class="swiper-slide hero__slide">
+           <div class="hero__box">
+            <picture class="hero__sponsors-box">
+              <source srcset="img/hero--sponsor-1.avif" type="image/avif">
+              <source srcset="img/hero--sponsor-1.webp" type="image/webp">
+              <img loading="lazy" src="img/hero--sponsor-1.png" class="image hero__sponsors-img" width="150" height="60" alt="Sponsor">
+            </picture>
+           </div>
+         </div>
+         <div class="swiper-slide hero__slide">
+          <div class="hero__box">
+           <picture class="hero__sponsors-box">
+             <source srcset="img/hero--sponsor-1.avif" type="image/avif">
+             <source srcset="img/hero--sponsor-1.webp" type="image/webp">
+             <img loading="lazy" src="img/hero--sponsor-1.png" class="image hero__sponsors-img" width="150" height="60" alt="Sponsor">
+           </picture>
+          </div>
+        </div>
+        <div class="swiper-slide hero__slide">
+          <div class="hero__box">
+           <picture class="hero__sponsors-box">
+             <source srcset="img/hero--sponsor-1.avif" type="image/avif">
+             <source srcset="img/hero--sponsor-1.webp" type="image/webp">
+             <img loading="lazy" src="img/hero--sponsor-1.png" class="image hero__sponsors-img" width="150" height="60" alt="Sponsor">
+           </picture>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+      <!-- About Start -->
+
+<section class="about">
+
+  <div class="about__container container">
+
+    <div class="about__content">
+      <h2 class="about__title section__title">How it works</h2>
+      <p class="about__text section__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna nec velit,
+        felis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Urna nec velit, felis nisl.
+      </p>
+    </div>
+
+    <ul class="about__list list-reset">
+
+      <li class="about__item">
+        <div class="about__box">
+          <img class="image about__img" loading="lazy" src="img/icon--search.svg"  width="40" height="40" alt="Icon Search">
+        </div>
+        <h3 class="about__subtitle">Search</h3>
+      </li>
+      <li class="about__item">
+        <div class="about__box">
+          <img class="image about__img" loading="lazy" src="img/icon--book.svg"  width="40" height="40" alt="Icon Book">
+        </div>
+        <h3 class="about__subtitle">Book</h3>
+      </li>
+      <li class="about__item">
+        <div class="about__box">
+          <img class="image about__img" loading="lazy" src="img/icon--chat.svg"  width="40" height="40" alt="Icon Chat">
+        </div>
+        <h3 class="about__subtitle">Chat</h3>
+      </li>
+
+    </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- About Ends -->
+
+      <!-- Benefits Start-->
+
+<section class="benefits">
+  <div class="benefits__container container">
+    <div class="benefits__left">
+      <picture>
+        <source srcset="img/benefits--1.avif" type="image/avif" />
+        <source srcset="img/benefits--1.webp" type="image/webp" />
+        <img
+          loading="lazy"
+          src="img/benefits--1.png"
+          class="image"
+          width="590"
+          height="500"
+          alt="Guarantee"
+        />
+      </picture>
+    </div>
+
+    <div class="benefits__right">
+      <h2 class="benefits__title section__title">
+        Guarantee for every booking you’ve made
+      </h2>
+      <p class="benefits__text section__text">
+        Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+        magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+        labore et dolore magna aliqua.
+      </p>
+      <a class="benefits__cta section__cta" href="#">Get started</a>
+    </div>
+  </div>
+
+  <div class="benefits__container container">
+
+    <div class="benefits__right">
+      <h2 class="benefits__title section__title">
+        Play together with your friends
+      </h2>
+      <p class="benefits__text section__text">
+        Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+        magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+        labore et dolore magna aliqua.
+      </p>
+      <a class="benefits__cta section__cta" href="#">Get started</a>
+    </div>
+
+    <div class="benefits__left benefits__left-inverse">
+      <picture>
+        <source srcset="img/benefits--2.avif" type="image/avif" />
+        <source srcset="img/benefits--2.webp" type="image/webp" />
+        <img
+          loading="lazy"
+          src="img/benefits--2.png"
+          class="image"
+          width="590"
+          height="500"
+          alt="Guarantee"
+        />
+      </picture>
+    </div>
+
+  </div>
+
+</section>
+<!-- Benefits End -->
+
+      <!-- Popular Swiper Start -->
+
+<section class="popular">
+
+  <div class="popular__container container">
+
+    <div class="popular__content">
+
+      <h2 class="popular__title section__title">The most popular pitches</h2>
+      <p class="popular__text section__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna nec velit,
+        felis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Urna nec velit, felis nisl.
+      </p>
+
+    </div>
+
+    <div class="popular__swiper swiper">
+
+      <div class="popular__wrapper swiper-wrapper">
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/popular--1.avif" type="image/avif">
+                <source srcset="img/popular--1.webp" type="image/webp">
+                <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="popular__location card__location">14 Leeds Road, Huddersfield</p>
+            </div>
+
+            <div class="popular__bottom card__bottom">
+              <h3 class="popular__title card__title">Arena name</h3>
+              <p class="popular__date card__date">Match date</p>
+              <div class="popular__info card__info">
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="popular__type card__type">5-a-syde</p>
+                <p class="popular__players card__players">20</p>
+              </div>
+              <a class="popular__cta section__cta card__cta" href="#">Book now</a>
+            </div>
+
+          </div>
+
+         </div>
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/popular--1.avif" type="image/avif">
+                <source srcset="img/popular--1.webp" type="image/webp">
+                <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="popular__location card__location">14 Leeds Road, Huddersfield</p>
+            </div>
+
+            <div class="popular__bottom card__bottom">
+              <h3 class="popular__title card__title">Arena name</h3>
+              <p class="popular__date card__date">Match date</p>
+              <div class="popular__info card__info">
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="popular__type card__type">5-a-syde</p>
+                <p class="popular__players card__players">20</p>
+              </div>
+              <a class="popular__cta section__cta card__cta" href="#">Book now</a>
+            </div>
+
+          </div>
+
+         </div>
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/popular--1.avif" type="image/avif">
+                <source srcset="img/popular--1.webp" type="image/webp">
+                <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="popular__location card__location">14 Leeds Road, Huddersfield</p>
+            </div>
+
+            <div class="popular__bottom card__bottom">
+              <h3 class="popular__title card__title">Arena name</h3>
+              <p class="popular__date card__date">Match date</p>
+              <div class="popular__info card__info">
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="popular__type card__type">5-a-syde</p>
+                <p class="popular__players card__players">20</p>
+              </div>
+              <a class="popular__cta section__cta card__cta" href="#">Book now</a>
+            </div>
+
+          </div>
+
+         </div>
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/popular--1.avif" type="image/avif">
+                <source srcset="img/popular--1.webp" type="image/webp">
+                <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="popular__location card__location">14 Leeds Road, Huddersfield</p>
+            </div>
+
+            <div class="popular__bottom card__bottom">
+              <h3 class="popular__title card__title">Arena name</h3>
+              <p class="popular__date card__date">Match date</p>
+              <div class="popular__info card__info">
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="popular__type card__type">5-a-syde</p>
+                <p class="popular__players card__players">20</p>
+              </div>
+              <a class="popular__cta section__cta card__cta" href="#">Book now</a>
+            </div>
+
+          </div>
+
+         </div>
+
+         <div class="popular__slide swiper-slide">
+
+          <div class="popular__item card">
+
+            <div class="popular__top card__top">
+              <picture class="popular__img-box card__img-box">
+                <source srcset="img/popular--1.avif" type="image/avif">
+                <source srcset="img/popular--1.webp" type="image/webp">
+                <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+              </picture>
+              <p class="popular__location card__location">14 Leeds Road, Huddersfield</p>
+            </div>
+
+            <div class="popular__bottom card__bottom">
+              <h3 class="popular__title card__title">Arena name</h3>
+              <p class="popular__date card__date">Match date</p>
+              <div class="popular__info card__info">
+                <p class="popular__rating card__rating">4.5</p>
+                <p class="popular__type card__type">5-a-syde</p>
+                <p class="popular__players card__players">20</p>
+              </div>
+              <a class="popular__cta section__cta card__cta" href="#">Book now</a>
+            </div>
+
+          </div>
+
+         </div>
+
+      </div>
+
+      <div class="popular__nav card__nav">
+        <div class="swiper-scrollbar card__scroll popular__scroll"></div>
+        <div class="popular__btns card__btns">
+          <button class="popular__btn popular__btn--prev card__btn btn-reset card__btn--prev " aria-label="Prev slide"></button>
+          <button class="popular__btn popular__btn--next card__btn btn-reset card__btn--next " aria-label="Next slide"></button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Popular Swiper End -->
+
+      <!-- Reviews Start -->
+<setion class="reviews">
+  <div class="reviews__container container">
+    <div class="reviews__left">
+      <picture>
+        <source srcset="img/reviews--1.avif" type="image/avif" />
+        <source srcset="img/reviews--1.webp" type="image/webp" />
+        <img
+          loading="lazy"
+          src="img/reviews--1.png"
+          class="image"
+          width="590"
+          height="500"
+          alt="Guarantee"
+        />
+      </picture>
+    </div>
+
+    <div class="reviews__right">
+      <h2 class="reviews__title section__title">
+        Testimonials
+      </h2>
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper reviews__wrapper">
+
+           <div class="swiper-slide reviews__slide">
+             <div class="reviews__item">
+              <p class="reviews__text section__text">
+                " Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+                magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+                labore et dolore magna aliqua. "
+              </p>
+              <div class="reviews__avatar">
+                <picture>
+                  <source srcset="img/reviews--avatar-1.avif" type="image/avif">
+                  <source srcset="img/reviews--avatar-1.webp" type="image/webp">
+                  <img loading="lazy" src="img/reviews--avatar-1.png" class="image" width="70" height="70" alt="Reviews avatar">
+                </picture>
+                <div class="reviews__info">
+                  <h3 class="reviews__name">Adrian Minune</h3>
+                  <p class="reviews__position">goalkeeper</p>
+                </div>
+              </div>
+             </div>
+           </div>
+
+           <div class="swiper-slide reviews__slide">
+            <div class="reviews__item">
+             <p class="reviews__text section__text">
+               " Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+               magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+               labore et dolore magna aliqua. "
+             </p>
+             <div class="reviews__avatar">
+               <picture>
+                 <source srcset="img/reviews--avatar-1.avif" type="image/avif">
+                 <source srcset="img/reviews--avatar-1.webp" type="image/webp">
+                 <img loading="lazy" src="img/reviews--avatar-1.png" class="image" width="70" height="70" alt="Reviews avatar">
+               </picture>
+               <div class="reviews__info">
+                 <h3 class="reviews__name">Dan Dipper</h3>
+                 <p class="reviews__position">goalkeeper</p>
+               </div>
+             </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__item">
+             <p class="reviews__text section__text">
+               " Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore
+               magna aliqua. Lorem ipsum dolor sit amet, consectetur incididunt ut
+               labore et dolore magna aliqua. "
+             </p>
+             <div class="reviews__avatar">
+               <picture>
+                 <source srcset="img/reviews--avatar-1.avif" type="image/avif">
+                 <source srcset="img/reviews--avatar-1.webp" type="image/webp">
+                 <img loading="lazy" src="img/reviews--avatar-1.png" class="image" width="70" height="70" alt="Reviews avatar">
+               </picture>
+               <div class="reviews__info">
+                 <h3 class="reviews__name">Lorem ipsum</h3>
+                 <p class="reviews__position">goalkeeper</p>
+               </div>
+             </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+</setion>
+<!-- Reviews End -->
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Connect Footer -->
+    <footer class="footer container-fluid">
+  <div class="footer__container container">
+    <a href="index.html" class="logo footer__logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <p class="footer__copy">©Copyright by THE6!</p>
+  </div>
+</footer>
+
+  </div>
+
+</body>
+<!-- Body End -->
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="EN" class="page">
+
+<!-- Connect Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SoccerBud</title>
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<!-- Body Start -->
+<body class="page__body log-in__page">
+
+  <div class="site-container">
+
+    <!-- Main Start -->
+    <main class="main sign__main main__flex container">
+
+      <!-- Form Start -->
+      <div class="sign__left">
+
+        <a href="index.html" class="logo sign__logo">
+          <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+        </a>
+
+        <form class="sign__form" action="" method="">
+
+          <h2 class="sign__title">Log in</h2>
+          <p class="sign__text">Not registered yet?<a class="sign__link" href="#">Create an account</a></p>
+
+          <!-- Check if password is the same -->
+          <input class="sign__input input input__error" type="email" name="email" value="" placeholder="Email">
+          <input class="sign__input input" type="password" name="password" placeholder="Password">
+
+          <div class="sign__box">
+
+            <button class="sign__btn btn-reset main__left-link" type="submit" name="login">Log in</button>
+
+          </div>
+
+          <div class="sign__with">
+            <h3 class="sign__with-title">Sign in with</h3>
+            <div class="sign__with-box">
+              <button class="sign__with-item btn-reset sign--google"></button>
+              <button class="sign__with-item btn-reset sign--facebook"></button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+      <!-- Form End -->
+
+      <!-- Image Start -->
+      <div class="sign__right">
+
+        <img class="sign__right-img" src="img/log-in-img.jpg" alt="Log in image">
+
+      </div>
+      <!-- Image End -->
+
+    </main>
+    <!-- Main End -->
+
+  </div>
+
+</body>
+<!-- Body End -->
+
+</html>

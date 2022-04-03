@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="EN" class="page">
+
+<!-- Connect Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SoccerBud</title>
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<!-- Body Start -->
+<body class="page__body search__page">
+
+  <div class="site-container">
+
+    <!-- Connect Header -->
+
+<!-- Header -->
+
+<header class="header">
+
+  <div class="container header__container">
+
+    <a href="index.html" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <div class="nav__container" data-menu>
+      <nav class="nav" title="Main navigation">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="single-page.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="search.html" class="nav__link">Search</a></li>
+          <li class="nav__item"><a href="tutorials.html" class="nav__link">Tutorials</a></li>
+          <li class="nav__item"><a href="chat.html" class="nav__link">Chat</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__right">
+
+        <!-- Hide when logged in -->
+        <!-- <ul class="nav__log list-reset">
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--login">Login</a></li>
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--sign">Sign up</a></li>
+        </ul> -->
+
+        <!-- Hide when logged out -->
+        <div class="user">
+          <p class="user__text">Hello
+            <span class="user__name">User Name</span>
+          </p>
+
+          <picture class="user__pic">
+            <source srcset="img/user-1.avif" type="image/avif">
+            <source srcset="img/user-1.webp" type="image/webp">
+            <img loading="lazy" src="img/user-1.png" class="image user__img" width="60" height="60" alt="User Avatar">
+          </picture>
+
+          <div class="dropdown dropdown--active">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a class="dropdown__link dropdown__signout" href="#">Sign out</a>
+                <a class="dropdown__link " href="#">Sign out more</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <button class="burger btn-reset" aria-label="Open menu" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+  </div>
+
+</header>
+
+    <!-- Main Start -->
+    <main class="main">
+      <!-- Search Form Start -->
+<form action="#" class="form search hero-hide">
+  <label class="search__label search__label--location" for="Location"> Location
+    <input type="text" name="Location" class="input-reset search__input" id="Location" placeholder="Choose location">
+  </label>
+  <label class="search__label search__label--date" for="Date"> Date
+    <input type="date" name="Date" class="input-reset search__input" id="Date" placeholder="Choose a day">
+  </label>
+  <button class="btn-reset search__btn">Search</button>
+</form>
+<!-- Search Form End -->
+
+      <div class="filter container">
+        <!-- Filter Start -->
+<aside class="filter__container">
+
+  <button class="filter__btn--close burger--active btn-reset" aria-label="Open menu" aria-expanded="false"  data-burger>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+  </button>
+
+  <form action="#" class="filter__form">
+
+    <div class="filter__content">
+
+      <h2 class="filter__title">
+        Filter
+      </h2>
+      <button class="filter__clear btn-reset" type="reset">Clear all</button>
+
+    </div>
+
+    <!-- Type Start -->
+    <div class="filter__wrapper">
+      <h3 class="filter__name">Pitch size</h3>
+
+      <div class="filter__box">
+
+        <label class="custom-checkbox" for="filter1">
+          <input type="checkbox" class="custom-checkbox__field" id="filter1">
+          <span class="custom-checkbox__content">Full-size</span>
+        </label>
+        <label class="custom-checkbox" for="filter2">
+          <input type="checkbox" class="custom-checkbox__field" id="filter2">
+          <span class="custom-checkbox__content">Medium size</span>
+        </label>
+        <label class="custom-checkbox" for="filter3">
+          <input type="checkbox" class="custom-checkbox__field" id="filter3">
+          <span class="custom-checkbox__content">Small</span>
+        </label>
+
+      </div>
+
+    </div>
+    <!-- Type End -->
+
+    <!-- Type Start -->
+    <div class="filter__wrapper">
+      <h3 class="filter__name">Playing surface</h3>
+
+      <div class="filter__box">
+
+        <label class="custom-checkbox" for="filter4">
+          <input type="checkbox" class="custom-checkbox__field" id="filter4">
+          <span class="custom-checkbox__content">Grass</span>
+        </label>
+        <label class="custom-checkbox" for="filter5">
+          <input type="checkbox" class="custom-checkbox__field" id="filter5">
+          <span class="custom-checkbox__content">Artificial</span>
+        </label>
+        <label class="custom-checkbox" for="filter6">
+          <input type="checkbox" class="custom-checkbox__field" id="filter6">
+          <span class="custom-checkbox__content">3G artificial</span>
+        </label>
+        <label class="custom-checkbox" for="filter7">
+          <input type="checkbox" class="custom-checkbox__field" id="filter7">
+          <span class="custom-checkbox__content">Indoor</span>
+        </label>
+
+      </div>
+
+    </div>
+    <!-- Type End -->
+
+  </form>
+
+</aside>
+<!-- Filter End -->
+
+        <!-- Filter Cards Start -->
+<div class="filter-cards__container">
+
+  <div class="filter-cards__content">
+
+    <div class="filter-select">
+      <select class="filter-select__box" name="selectItem" id="selectItem">
+        <option class="filter-select__option" value="">Sort by</option>
+        <option class="filter-select__option" value="">Lowest price</option>
+        <option class="filter-select__option" value="">Highest price</option>
+        <option class="filter-select__option" value="">Ascending</option>
+        <option class="filter-select__option" value="">Descending</option>
+        <option class="filter-select__option" value="">Rating</option>
+      </select>
+
+    </div>
+
+    <button class="filter-cards__btn btn-reset">Filter</button>
+
+  </div>
+
+  <div class="filter__cards">
+    <div class="filter__item card">
+
+      <div class="filter__top card__top">
+        <picture class="filter__img-box card__img-box">
+          <source srcset="img/popular--1.avif" type="image/avif">
+          <source srcset="img/popular--1.webp" type="image/webp">
+          <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+        </picture>
+        <p class="filter__location card__location">14 Leeds Road, Huddersfield</p>
+      </div>
+
+      <div class="filter__bottom card__bottom">
+        <h3 class=" filter__card-title card__title">Arena name</h3>
+        <p class="filter__date card__date">Match date</p>
+        <div class="filter__info card__info">
+          <p class="filter__rating card__rating">4.5</p>
+          <p class="filter__type card__type">5-a-syde</p>
+          <p class="filter__players card__players">20</p>
+        </div>
+        <a class="filter__cta section__cta card__cta" href="#">Book now</a>
+      </div>
+
+    </div>
+    <div class="filter__item card">
+
+      <div class="filter__top card__top">
+        <picture class="filter__img-box card__img-box">
+          <source srcset="img/popular--1.avif" type="image/avif">
+          <source srcset="img/popular--1.webp" type="image/webp">
+          <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+        </picture>
+        <p class="filter__location card__location">14 Leeds Road, Huddersfield</p>
+      </div>
+
+      <div class="filter__bottom card__bottom">
+        <h3 class=" filter__card-title card__title">Arena name</h3>
+        <p class="filter__date card__date">Match date</p>
+        <div class="filter__info card__info">
+          <p class="filter__rating card__rating">4.5</p>
+          <p class="filter__type card__type">5-a-syde</p>
+          <p class="filter__players card__players">20</p>
+        </div>
+        <a class="filter__cta section__cta card__cta" href="#">Book now</a>
+      </div>
+
+    </div>
+    <div class="filter__item card">
+
+      <div class="filter__top card__top">
+        <picture class="filter__img-box card__img-box">
+          <source srcset="img/popular--1.avif" type="image/avif">
+          <source srcset="img/popular--1.webp" type="image/webp">
+          <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+        </picture>
+        <p class="filter__location card__location">14 Leeds Road, Huddersfield</p>
+      </div>
+
+      <div class="filter__bottom card__bottom">
+        <h3 class=" filter__card-title card__title">Arena name</h3>
+        <p class="filter__date card__date">Match date</p>
+        <div class="filter__info card__info">
+          <p class="filter__rating card__rating">4.5</p>
+          <p class="filter__type card__type">5-a-syde</p>
+          <p class="filter__players card__players">20</p>
+        </div>
+        <a class="filter__cta section__cta card__cta" href="#">Book now</a>
+      </div>
+
+    </div>
+    <div class="filter__item card">
+
+      <div class="filter__top card__top">
+        <picture class="filter__img-box card__img-box">
+          <source srcset="img/popular--1.avif" type="image/avif">
+          <source srcset="img/popular--1.webp" type="image/webp">
+          <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+        </picture>
+        <p class="filter__location card__location">14 Leeds Road, Huddersfield</p>
+      </div>
+
+      <div class="filter__bottom card__bottom">
+        <h3 class=" filter__card-title card__title">Arena name</h3>
+        <p class="filter__date card__date">Match date</p>
+        <div class="filter__info card__info">
+          <p class="filter__rating card__rating">4.5</p>
+          <p class="filter__type card__type">5-a-syde</p>
+          <p class="filter__players card__players">20</p>
+        </div>
+        <a class="filter__cta section__cta card__cta" href="#">Book now</a>
+      </div>
+
+    </div>
+    <div class="filter__item card">
+
+      <div class="filter__top card__top">
+        <picture class="filter__img-box card__img-box">
+          <source srcset="img/popular--1.avif" type="image/avif">
+          <source srcset="img/popular--1.webp" type="image/webp">
+          <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+        </picture>
+        <p class="filter__location card__location">14 Leeds Road, Huddersfield</p>
+      </div>
+
+      <div class="filter__bottom card__bottom">
+        <h3 class=" filter__card-title card__title">Arena name</h3>
+        <p class="filter__date card__date">Match date</p>
+        <div class="filter__info card__info">
+          <p class="filter__rating card__rating">4.5</p>
+          <p class="filter__type card__type">5-a-syde</p>
+          <p class="filter__players card__players">20</p>
+        </div>
+        <a class="filter__cta section__cta card__cta" href="#">Book now</a>
+      </div>
+
+    </div>
+    <div class="filter__item card">
+
+      <div class="filter__top card__top">
+        <picture class="filter__img-box card__img-box">
+          <source srcset="img/popular--1.avif" type="image/avif">
+          <source srcset="img/popular--1.webp" type="image/webp">
+          <img loading="lazy" src="img/popular--1.jpg" class="image popular__img card__img" width="" height="" alt="Pitch image">
+        </picture>
+        <p class="filter__location card__location">14 Leeds Road, Huddersfield</p>
+      </div>
+
+      <div class="filter__bottom card__bottom">
+        <h3 class=" filter__card-title card__title">Arena name</h3>
+        <p class="filter__date card__date">Match date</p>
+        <div class="filter__info card__info">
+          <p class="filter__rating card__rating">4.5</p>
+          <p class="filter__type card__type">5-a-syde</p>
+          <p class="filter__players card__players">20</p>
+        </div>
+        <a class="filter__cta section__cta card__cta" href="#">Book now</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- Filter Cards End -->
+
+      </div>
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Connect Footer -->
+    <footer class="footer container-fluid">
+  <div class="footer__container container">
+    <a href="index.html" class="logo footer__logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <p class="footer__copy">©Copyright by THE6!</p>
+  </div>
+</footer>
+
+  </div>
+
+</body>
+<!-- Body End -->
+
+</html>

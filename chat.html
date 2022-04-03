@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="EN" class="page">
+
+<!-- Connect Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SoccerBud</title>
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<!-- Body Start -->
+<body class="page__body search__page">
+
+  <div class="site-container">
+
+    <!-- Connect Header -->
+
+<!-- Header -->
+
+<header class="header">
+
+  <div class="container header__container">
+
+    <a href="index.html" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <div class="nav__container" data-menu>
+      <nav class="nav" title="Main navigation">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="single-page.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="search.html" class="nav__link">Search</a></li>
+          <li class="nav__item"><a href="tutorials.html" class="nav__link">Tutorials</a></li>
+          <li class="nav__item"><a href="chat.html" class="nav__link">Chat</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__right">
+
+        <!-- Hide when logged in -->
+        <!-- <ul class="nav__log list-reset">
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--login">Login</a></li>
+          <li class="nav__log-item"><a href="#" class="nav__log-link nav__log--sign">Sign up</a></li>
+        </ul> -->
+
+        <!-- Hide when logged out -->
+        <div class="user">
+          <p class="user__text">Hello
+            <span class="user__name">User Name</span>
+          </p>
+
+          <picture class="user__pic">
+            <source srcset="img/user-1.avif" type="image/avif">
+            <source srcset="img/user-1.webp" type="image/webp">
+            <img loading="lazy" src="img/user-1.png" class="image user__img" width="60" height="60" alt="User Avatar">
+          </picture>
+
+          <div class="dropdown dropdown--active">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a class="dropdown__link dropdown__signout" href="#">Sign out</a>
+                <a class="dropdown__link " href="#">Sign out more</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <button class="burger btn-reset" aria-label="Open menu" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+  </div>
+
+</header>
+
+    <!-- Main Start -->
+    <main class="main container">
+
+      <div class="chat">
+        <!-- Chat Left Start -->
+
+<div class="chat__left">
+
+  <h2 class="chat__title">Chat</h2>
+
+  <form class="chat__form"  action="">
+    <input class="chat__input" type="text" name="search">
+    <button class="chat__btn btn-reset">
+      <svg class="chat__btn-img" width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.3333 31.6667C25.6971 31.6667 31.6667 25.6971 31.6667 18.3333C31.6667 10.9695 25.6971 5 18.3333 5C10.9695 5 5 10.9695 5 18.3333C5 25.6971 10.9695 31.6667 18.3333 31.6667Z" stroke="#F6F9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M35 35L27.75 27.75" stroke="#F6F9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </form>
+
+  <div class="chat__items">
+       <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+
+       <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+
+      <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+
+       <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+
+       <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+
+       <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+
+      <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+
+       <!-- Player Card Start -->
+      <div class="chat__item single__players-item players__item">
+        <div class="players__left">
+          <img
+            class="players__img"
+            loading="lazy"
+            src="img/players--img.png"
+            class="image"
+            width=""
+            height=""
+            alt=""
+          />
+          <div class="players__details">
+            <h3 class="players__name">Nick</h3>
+            <div class="players__info">
+              <p class="players__info-text chat__info-text players__position">Lorem ipsum fssfgfdggfsffsfffs</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat__item-right players__right">
+          <p class="chat__time">9:12</p>
+        </div>
+      </div>
+      <!-- Player Card End -->
+  </div>
+
+</div>
+
+<!-- Chat Left End -->
+
+        <!-- Chat Right Start -->
+
+<div class="chat__right">
+  <div class="chat__right-box">
+    <div class="chat__right-top">
+      <div class="chat__right-content chat__display-left">
+        <p class="chat__right-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar justo viverra facilisi dignissim enim facilisis. Dui et, elit at imperdiet sit elementum quisque ac lorem.</p>
+        <p class="chat__right-time">14:02</p>
+      </div>
+      <div class="chat__right-content chat__display-right">
+        <p class="chat__right-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar justo viverra facilisi dignissim enim facilisis. Dui et, elit at imperdiet sit elementum quisque ac lorem.</p>
+        <p class="chat__right-time">14:02</p>
+      </div>
+    </div>
+    <div class="chat__right-bottom">
+      <div class="chat__box">
+        <img class="chat__box-img" src="img/chat--add.svg" alt="">
+        <img class="chat__box-img" src="img/chat--share.svg" alt="">
+        <img class="chat__box-img" src="img/chat--camera.svg" alt="">
+      </div>
+      <form class="chat__right-form" action="">
+        <textarea class="chat__right-input" type="text"></textarea>
+        <button class="chat__right-btn btn-reset"><img class="chat__right-img" src="img/chat--send.svg" alt=""></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Chat Right End -->
+
+      </div>
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Connect Footer -->
+    <footer class="footer container-fluid">
+  <div class="footer__container container">
+    <a href="index.html" class="logo footer__logo">
+      <img loading="lazy" src="img/logo.svg" class="image logo__img" width="220" height="50" alt="SoccerBud Logo">
+    </a>
+
+    <p class="footer__copy">©Copyright by THE6!</p>
+  </div>
+</footer>
+
+  </div>
+
+</body>
+<!-- Body End -->
+
+</html>
